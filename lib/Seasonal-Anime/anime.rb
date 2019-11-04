@@ -1,4 +1,4 @@
-require_relative '..../config/environment.rb'
+require_relative '.../config/environment.rb'
 
 class Anime
   attr_accessor :name, :availability, :day, :time, :show_link
