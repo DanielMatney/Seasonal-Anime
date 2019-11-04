@@ -11,7 +11,6 @@ class CommandLineInterface
     shows = Scraper.scrape_list
     list_anime(shows)
     select_show(shows)
-    end
   end
   
   def list_anime(shows)
@@ -20,16 +19,21 @@ class CommandLineInterface
   end
   
   def select_show(shows)
-    puts "Type the rank of the anime you'd like info on."
-    input = gets.chomp.to_i
-    if input >= 1 && input <= 50
-      show = shows.detect{|h| h[:rank] == input.to_s}
-      binding.pry
+    puts "Type the rank of the anime you'd like info on or 'exit' to exit."
+    input = gets.chomp
+    number = input.to_i
+    if number >= 1 && number <= 50
+      show = shows.detect{|h| h[:rank] == input}
       puts "Here is the info for #{show[:name]}:"
       puts "Rank: #{show[:rank]}"
       puts "Rating: #{show[:score]}"
       puts "Full Page: #{show[:link]}"
+      select_show(shows)
+    elsif input == "exit"
+      return
     else puts "Please input a valid number between 1 and 50."
-      select_show
+      select_show(shows)
+    end
   end
+  
 end
