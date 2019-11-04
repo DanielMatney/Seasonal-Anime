@@ -1,3 +1,8 @@
+PATH
+  remote: .
+  specs:
+    Seasonal-Anime (0.1.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -15,6 +20,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  Seasonal-Anime!
   nokogiri
   pry
   require_all

@@ -1,16 +1,16 @@
-lib = File.expand_path("../lib", __FILE__)
+lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+#require 'daily_deal/version'
 
-Gem::Specification.new do |s|
-    s.name = 'Seasonal-Anime'
-    s.version = '0.1.1'
-    s.date = '2019-11-03'
-    s.summary = 'App to check Crunchyrolls weekly lineup'
-    s.description = 'And application to see the current weeks airing anime on Crunchyroll'
-    s.authors = ['Daniel Matney']
-    s.email = 'danieljmatney@gmail.com'
-    s.files = ["lib/Seasonal-Anime.scraper.rb", "lib/Seasonal-Anime/cli.rb", "lib/Seasonal-Anime/anime.rb", "lib/Seasonal-Anime/seasonal-anime.rb", "config/environment.rb"]
-    s.homepage = 'https://rubygems.org/profiles/DanielMatney'
-    s.license = 'MIT'
-    s.executables << 'Seasonal-Anime'
-end 
+Gem::Specification.new do |spec|
+  spec.name          = "Seasonal-Anime"
+  spec.version       = "0.1.1"
+  spec.authors       = ["aviflombaum"]
+  spec.email         = ["avi@flombaum.com"]
+  spec.summary       = "Summary"
+  spec.description   = "Description"
+  spec.homepage      = github.com/DanielMatney/Seasonal-Anime
+  spec.license       = "MIT"
+  spec.require_paths = ["lib"]
+
+end

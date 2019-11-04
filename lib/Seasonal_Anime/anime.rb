@@ -1,4 +1,8 @@
-require_relative '.../config/environment.rb'
+require_relative './cli.rb'
+require_relative './scraper.rb'
+require 'nokogiri'
+require 'open-uri'
+require 'pry'
 
 class Anime
   attr_accessor :name, :availability, :day, :time, :show_link
