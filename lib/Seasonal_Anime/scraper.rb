@@ -22,5 +22,4 @@ class Scraper
     show_array
   end
   
-  
 end
