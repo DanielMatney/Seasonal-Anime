@@ -5,7 +5,7 @@ require 'open-uri'
 require 'pry'
 
 class Anime
-  attr_accessor :name, :availability, :day, :time, :show_link
+  attr_accessor :name, :rank, :link, :score
   
   @@all = []
   
@@ -13,6 +13,16 @@ class Anime
     anime_list.each {|key, value| self.send(("#{key}="), value)
     }
     @@all << self
+  end
+  
+  def self.create_shows(array)
+    array.each do |show|
+      new = Anime.new(show)
+    end
+  end
+  
+  def self.all
+    @@all
   end
   
 end

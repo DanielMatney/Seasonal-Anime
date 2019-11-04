@@ -7,14 +7,15 @@ require 'pry'
 class CommandLineInterface
   
   def run
-    puts "Grabbing this week's upcoming anime for you..."
+    puts "Grabbing this week's top anime for you..."
     list_anime
-    puts "Please enter the day you wish to view in more detail:"
-    
+    binding.pry
   end
   
   def list_anime
-    Scraper.scrape_list
+    shows = Scraper.scrape_list
+    Anime.create_shows(shows)
+    Anime.all.each {|anime| puts "#{anime.rank}. #{anime.name}"}
   end
   
   

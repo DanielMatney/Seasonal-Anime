@@ -2,4 +2,4 @@
 
 require_relative "../lib/seasonal-anime.rb"
 
-cli.new.run
+CommandLineInterface.new.run
