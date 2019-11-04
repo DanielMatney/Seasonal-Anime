@@ -3,4 +3,4 @@ require_relative './Seasonal_Anime/anime.rb'
 require_relative './Seasonal_Anime/scraper.rb'
 require 'nokogiri'
 require 'open-uri'
-CommandLineInterface.new.run
+require 'pry'
