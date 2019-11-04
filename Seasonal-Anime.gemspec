@@ -5,8 +5,8 @@ Gem::Specification.new do |s|
     s.name = 'Seasonal-Anime'
     s.version = '0.1.1'
     s.date = '2019-11-03'
-    s.summary = 'App to check Crunchyrolls weekly lineup'
-    s.description = 'And application to see the current weeks airing anime on Crunchyroll'
+    s.summary = 'App to check top rated anime on MyAnimeList.net'
+    s.description = 'An application to see the top ranking anime currently airing and info on them.'
     s.authors = ['Daniel Matney']
     s.email = 'danieljmatney@gmail.com'
     s.files = ["lib/Seasonal-Anime.scraper.rb", "lib/Seasonal-Anime/cli.rb", "lib/Seasonal-Anime/anime.rb", "lib/Seasonal-Anime/seasonal-anime.rb", "config/environment.rb"]

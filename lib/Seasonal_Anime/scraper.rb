@@ -6,10 +6,9 @@ require 'pry'
 
 class Scraper
   
-  def self.scrape_list
-    html = Nokogiri::HTML(open(https://www.crunchyroll.com/simulcastcalendar))
-    days = html.css(".day")
-    shows = html.css(".release js-release")
+ def self.scrape_list
+    html = Nokogiri::HTML(open("https://myanimelist.net"))
+    shows = html.css(".ranking-digest")
     binding.pry
     days.each do |day|
       
