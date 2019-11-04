@@ -1,4 +1,4 @@
-require_relative '../Anime.rb'
+require_relative '..../config/environment.rb'
 
 class CommandLineInterface
   
